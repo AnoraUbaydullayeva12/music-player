@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-app">
+        <div class="player">
+            <img src="https://cdn-images.dzcdn.net/images/cover/695334d007e7f7273c180cbe9da5cb9f/0x1900-000000-80-0-0.jpg" alt="Adele" class="album-cover">
+            <h2 id="song-title">Janze</h2>
+            <p id="artist-name">Xamdam Sobirov</p>
+            <audio id="audio-player" src=""></audio>
+            <div class="wave-container">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <div class="progress-bar">
+                <span id="current-time">2:71</span>
+                <div class="bar" onclick="seek(event)">
+                    <div class="fill"></div>
+                </div>
+                <span id="duration">0:67</span>
+            </div>
+            <div class="controls">
+                <button id="prev">⏮</button>
+                <button id="play-pause">▶</button>
+                <button id="next">⏭</button>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="song active" data-src="https://cdn.pixabay.com/download/audio/2022/10/31/audio_2fb6890506.mp3">
+                <img src="https://www.thedj.co.uk/wp-content/uploads/2014/07/music-colour-splash.jpg" alt="Adele">
+                <div>
+                    <h3>Adele</h3>
+                    <p>Easy On Me</p>
+                </div>
+                <span>3:45</span>
+            </div>
+            <div class="song" data-src="https://cdn.pixabay.com/download/audio/2023/01/16/audio_8983db9011.mp3">
+                <img src="https://media.gq.com/photos/55d25378606992214f1ecc7d/16:9/w_2560%2Cc_limit/The-Weekend-GQ-2015-01.jpg" alt="The Weeknd">
+                <div>
+                    <h3>The Weeknd</h3>
+                    <p>Blinding Lights</p>
+                </div>
+                <span>3:20</span>
+            </div>
+            <div class="song" data-src="https://cdn.pixabay.com/download/audio/2023/03/18/audio_472bf54451.mp3">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/024/295/098/small_2x/music-notes-background-illustration-ai-generative-free-photo.jpg" alt="Ed Sheeran">
+                <div>
+                    <h3>Ed Sheeran</h3>
+                    <p>Perfect</p>
+                </div>
+                <span>4:23</span>
+            </div>
+            <div class="song" data-src="https://cdn.pixabay.com/download/audio/2022/03/08/audio_4e981efb15.mp3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Billie_Eilish_-_Happier_Than_Ever.png" alt="Billie Eilish">
+                <div>
+                    <h3>Billie Eilish</h3>
+                    <p>Happier Than Ever</p>
+                </div>
+                <span>4:58</span>
+            </div>
+            <div class="song" data-src="https://cdn.pixabay.com/download/audio/2022/01/25/audio_7d3916b87b.mp3">
+                <img src="https://www.neste.ee/sites/neste.ee/files/coldplay_neste_collaboration-1280-x-960.jpg" alt="Coldplay">
+                <div>
+                    <h3>Coldplay</h3>
+                    <p>Adventure of a Lifetime</p>
+                </div>
+                <span>4:27</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
